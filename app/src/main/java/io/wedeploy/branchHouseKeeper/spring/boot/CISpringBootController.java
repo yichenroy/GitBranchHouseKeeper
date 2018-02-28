@@ -14,6 +14,8 @@ public class CISpringBootController {
 	@RequestMapping("/")
 	public String index(Map<String, Object> model) throws Exception {
 
+		model.put("sample", "sample");
+
 		return "index";
 	}
 

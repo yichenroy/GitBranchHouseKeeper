@@ -1,7 +1,4 @@
-package io.wedeploy.ci.spring.boot;
-
-import io.wedeploy.ci.jenkins.JenkinsLegion;
-import io.wedeploy.ci.jenkins.JenkinsUpdaterJob;
+package io.wedeploy.branchHouseKeeper.spring.boot;
 
 import java.util.Arrays;
 
@@ -32,10 +29,6 @@ public class CISpringBootApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(CISpringBootApplication.class, args);
-
-		JenkinsLegion jenkinsLegion = JenkinsLegion.getJenkinsLegion();
-
-		JenkinsUpdaterJob.start();
 	}
 
 }
